@@ -44,16 +44,29 @@
                                     <constraint firstAttribute="width" constant="240" id="psG-Vf-S79"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jfs-Cm-lU8">
+                                <rect key="frame" x="68" y="516.5" width="239" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="hnv-WT-rNF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="17"/>
+                                <state key="normal" title="abcdefghijklmnopqrstuvwxyz."/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="YiU-Kp-3QC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2jt-hz-9gQ"/>
+                            <constraint firstItem="jfs-Cm-lU8" firstAttribute="top" secondItem="nZs-ke-dWe" secondAttribute="bottom" constant="20" id="FKX-Zf-pFg"/>
                             <constraint firstItem="YiU-Kp-3QC" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="X8y-mg-OiC"/>
+                            <constraint firstItem="jfs-Cm-lU8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dIx-qS-llb"/>
                             <constraint firstItem="nZs-ke-dWe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jvP-BT-BYr"/>
                             <constraint firstItem="nZs-ke-dWe" firstAttribute="top" secondItem="YiU-Kp-3QC" secondAttribute="bottom" constant="20" id="k8z-Ca-hMn"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="hiraginoFontButton" destination="jfs-Cm-lU8" id="Wqj-Fx-bba"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

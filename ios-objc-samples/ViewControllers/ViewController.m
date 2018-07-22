@@ -10,14 +10,22 @@
 
 @interface ViewController ()
 
+@property (weak, nonatomic) IBOutlet UIButton *hiraginoFontButton;
 @end
 
 @implementation ViewController
 
+#pragma mark - Life cycle
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
+    // Hiraginoフォントでは、UIButtonの高さを十分にしても「g」や「j」の下が切れるためcontentVerticalAlignmentを変更する
+    self.hiraginoFontButton.contentVerticalAlignment = UIControlContentVerticalAlignmentFill;
 }
+
+#pragma mark - IBAction
+
 - (IBAction)didTapOutputLogButton:(UIButton *)sender {
     NSLog(@"(%s Line: %d) I tapped the button!", __func__, __LINE__);
 }
