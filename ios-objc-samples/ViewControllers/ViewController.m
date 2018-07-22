@@ -7,17 +7,20 @@
 //
 
 #import "ViewController.h"
+#import "SPJPickerTextField.h"
+#import "UITextField+ProhibitedCopyAndPaste.h"
 
 @interface ViewController ()
 
+@property (weak, nonatomic) IBOutlet SPJPickerTextField *fruitsField;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-}
 
+    [self.fruitsField setupWithDataList:@[@"apple", @"grape", @"peach", @"pineapple", @"strawberry"]];
+}
 
 @end
