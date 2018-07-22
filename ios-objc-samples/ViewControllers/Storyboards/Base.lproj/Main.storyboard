@@ -39,10 +39,22 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="リンクはこちらです" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cxj-lU-4B0">
+                                <rect key="frame" x="109.5" y="162.5" width="156" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="JhY-TG-wq5" appends="YES" id="sTa-cD-09B"/>
+                                </connections>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
+                            <constraint firstItem="cxj-lU-4B0" firstAttribute="top" secondItem="Ti4-uU-oOj" secondAttribute="bottom" constant="20" id="637-hy-las"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ti4-uU-oOj" secondAttribute="trailing" constant="24" id="Dha-Ci-lJB"/>
+                            <constraint firstItem="cxj-lU-4B0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="H0I-m9-uce"/>
                             <constraint firstItem="Ti4-uU-oOj" firstAttribute="top" secondItem="FTM-xD-ie0" secondAttribute="bottom" constant="20" id="HrF-Yb-bz4"/>
                             <constraint firstItem="FTM-xD-ie0" firstAttribute="top" secondItem="8Ej-fd-Gtl" secondAttribute="bottom" constant="20" id="P4G-5z-9Fa"/>
                             <constraint firstItem="8Ej-fd-Gtl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ZuB-Y9-WQ6"/>
@@ -54,11 +66,17 @@
                     </view>
                     <connections>
                         <outlet property="anyLinesLabel" destination="Ti4-uU-oOj" id="fWI-cE-njj"/>
+                        <outlet property="linkLabel" destination="cxj-lU-4B0" id="Lev-38-peX"/>
                         <outlet property="oneLineLabel" destination="8Ej-fd-Gtl" id="yLo-rI-ePE"/>
                         <outlet property="twoLinesLabel" destination="FTM-xD-ie0" id="ism-py-XAj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="JhY-TG-wq5">
+                    <connections>
+                        <action selector="didTapLinkLabel:" destination="BYZ-38-t0r" id="cUd-Ed-GBU"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
         </scene>
     </scenes>
