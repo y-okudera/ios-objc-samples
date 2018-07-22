@@ -24,3 +24,12 @@ developブランチを作成して、移動する
 コミットする
 
 `$ git commit -m "Add new project."`
+
+## マージ
+マージ先のmasterブランチに移動
+
+`$ git checkout master`
+
+developブランチをマージする
+
+`git merge develop --no-ff`
