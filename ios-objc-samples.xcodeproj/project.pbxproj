@@ -15,6 +15,7 @@
 		B659AC6021044941005D5A98 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B659AC5F21044941005D5A98 /* main.m */; };
 		B659AC6A21044941005D5A98 /* ios_objc_samplesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B659AC6921044941005D5A98 /* ios_objc_samplesTests.m */; };
 		B659AC7521044941005D5A98 /* ios_objc_samplesUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B659AC7421044941005D5A98 /* ios_objc_samplesUITests.m */; };
+		B6DC92BE2104F5F000A7DB7B /* UITextField+ProhibitedCopyAndPaste.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DC92BD2104F5F000A7DB7B /* UITextField+ProhibitedCopyAndPaste.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		B659AC7021044941005D5A98 /* ios-objc-samplesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-objc-samplesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B659AC7421044941005D5A98 /* ios_objc_samplesUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ios_objc_samplesUITests.m; sourceTree = "<group>"; };
 		B659AC7621044941005D5A98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6DC92BC2104F5F000A7DB7B /* UITextField+ProhibitedCopyAndPaste.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextField+ProhibitedCopyAndPaste.h"; sourceTree = "<group>"; };
+		B6DC92BD2104F5F000A7DB7B /* UITextField+ProhibitedCopyAndPaste.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextField+ProhibitedCopyAndPaste.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +149,7 @@
 		B659AC4F2104493D005D5A98 /* ios-objc-samples */ = {
 			isa = PBXGroup;
 			children = (
+				B6DC92BA2104F57300A7DB7B /* Categories */,
 				B61FBA9621045D670038AF3A /* Models */,
 				B61FBA9521045D610038AF3A /* ViewControllers */,
 				B61FBA9421045D5B0038AF3A /* Views */,
@@ -170,6 +174,23 @@
 				B659AC7621044941005D5A98 /* Info.plist */,
 			);
 			path = "ios-objc-samplesUITests";
+			sourceTree = "<group>";
+		};
+		B6DC92BA2104F57300A7DB7B /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				B6DC92BB2104F59000A7DB7B /* UIKit */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		B6DC92BB2104F59000A7DB7B /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				B6DC92BC2104F5F000A7DB7B /* UITextField+ProhibitedCopyAndPaste.h */,
+				B6DC92BD2104F5F000A7DB7B /* UITextField+ProhibitedCopyAndPaste.m */,
+			);
+			path = UIKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -304,6 +325,7 @@
 			files = (
 				B659AC552104493D005D5A98 /* ViewController.m in Sources */,
 				B659AC6021044941005D5A98 /* main.m in Sources */,
+				B6DC92BE2104F5F000A7DB7B /* UITextField+ProhibitedCopyAndPaste.m in Sources */,
 				B659AC522104493D005D5A98 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
