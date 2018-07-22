@@ -8,6 +8,20 @@
 
 #import "ViewController.h"
 
+#pragma mark - Const
+
+static NSString * const SPJAlert = @"アラート";
+static NSString * const SPJChangeTheBGColor = @"背景色を変更しますか？";
+static NSString * const SPJOK = @"OK";
+static NSString * const SPJCancel = @"Cancel";
+static NSString * const SPJActionSheet = @"アクションシート";
+static NSString * const SPJSelectTheBGColor = @"背景色を選択してください。";
+static NSString * const SPJColorNameWhite = @"White";
+static NSString * const SPJColorNameRed = @"Red";
+static NSString * const SPJColorNameBlue = @"Blue";
+static NSString * const SPJColorNameYellow = @"Yellow";
+
+
 @interface ViewController ()
 
 @end
@@ -34,12 +48,12 @@
 #pragma mark - Others
 
 - (void)showAlert {
-    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"アラート"
-                                                                             message:@"背景色を変更しますか？"
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:SPJAlert
+                                                                             message:SPJChangeTheBGColor
                                                                       preferredStyle:UIAlertControllerStyleAlert];
 
     __weak typeof(self) weakSelf = self;
-    UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+    UIAlertAction *okAction = [UIAlertAction actionWithTitle:SPJOK style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         __strong typeof(self) strongSelf = weakSelf;
         if (!strongSelf) {
             return;
@@ -51,20 +65,20 @@
     [alertController addAction:okAction];
 
     // Cancel選択時は何もしないため、handlerはnil
-    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:nil];
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:SPJCancel style:UIAlertActionStyleCancel handler:nil];
     [alertController addAction:cancelAction];
 
     [self presentViewController:alertController animated:YES completion:nil];
 }
 
 - (void)showActionSheet {
-    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"アクションシート"
-                                                                             message:@"背景色を選択してください。"
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:SPJActionSheet
+                                                                             message:SPJSelectTheBGColor
                                                                       preferredStyle:UIAlertControllerStyleActionSheet];
 
     __weak typeof(self) weakSelf = self;
 
-    UIAlertAction *whiteColorAction = [UIAlertAction actionWithTitle:@"White" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+    UIAlertAction *whiteColorAction = [UIAlertAction actionWithTitle:SPJColorNameWhite style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         __strong typeof(self) strongSelf = weakSelf;
         if (!strongSelf) {
             return;
@@ -73,7 +87,7 @@
     }];
     [alertController addAction:whiteColorAction];
 
-    UIAlertAction *redColorAction = [UIAlertAction actionWithTitle:@"Red" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+    UIAlertAction *redColorAction = [UIAlertAction actionWithTitle:SPJColorNameRed style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         __strong typeof(self) strongSelf = weakSelf;
         if (!strongSelf) {
             return;
@@ -82,7 +96,7 @@
     }];
     [alertController addAction:redColorAction];
 
-    UIAlertAction *blueColorAction = [UIAlertAction actionWithTitle:@"Blue" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+    UIAlertAction *blueColorAction = [UIAlertAction actionWithTitle:SPJColorNameBlue style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         __strong typeof(self) strongSelf = weakSelf;
         if (!strongSelf) {
             return;
@@ -91,7 +105,7 @@
     }];
     [alertController addAction:blueColorAction];
 
-    UIAlertAction *yellowColorAction = [UIAlertAction actionWithTitle:@"Yellow" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+    UIAlertAction *yellowColorAction = [UIAlertAction actionWithTitle:SPJColorNameYellow style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         __strong typeof(self) strongSelf = weakSelf;
         if (!strongSelf) {
             return;
@@ -101,11 +115,10 @@
     [alertController addAction:yellowColorAction];
 
     // Cancel選択時は何もしないため、handlerはnil
-    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:nil];
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:SPJCancel style:UIAlertActionStyleCancel handler:nil];
     [alertController addAction:cancelAction];
 
     [self presentViewController:alertController animated:YES completion:nil];
 }
-
 
 @end
