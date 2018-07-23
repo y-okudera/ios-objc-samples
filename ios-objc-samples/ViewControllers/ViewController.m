@@ -7,9 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "SPJDatePickerTextField.h"
 
 @interface ViewController ()
 
+@property (weak, nonatomic) IBOutlet SPJDatePickerTextField *datePickerTextField;
 @end
 
 @implementation ViewController
