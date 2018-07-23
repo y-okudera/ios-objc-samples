@@ -90,13 +90,6 @@
 			path = Others;
 			sourceTree = "<group>";
 		};
-		B61FBA9421045D5B0038AF3A /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
 		B61FBA9521045D610038AF3A /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -148,7 +141,7 @@
 			children = (
 				B61FBA9621045D670038AF3A /* Models */,
 				B61FBA9521045D610038AF3A /* ViewControllers */,
-				B61FBA9421045D5B0038AF3A /* Views */,
+				B6DC92CB210632F600A7DB7B /* Views */,
 				B61FBA9321045D430038AF3A /* Others */,
 			);
 			path = "ios-objc-samples";
@@ -170,6 +163,13 @@
 				B659AC7621044941005D5A98 /* Info.plist */,
 			);
 			path = "ios-objc-samplesUITests";
+			sourceTree = "<group>";
+		};
+		B6DC92CB210632F600A7DB7B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
