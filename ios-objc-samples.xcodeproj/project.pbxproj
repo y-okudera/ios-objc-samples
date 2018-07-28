@@ -15,6 +15,12 @@
 		B659AC6021044941005D5A98 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B659AC5F21044941005D5A98 /* main.m */; };
 		B659AC6A21044941005D5A98 /* ios_objc_samplesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B659AC6921044941005D5A98 /* ios_objc_samplesTests.m */; };
 		B659AC7521044941005D5A98 /* ios_objc_samplesUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B659AC7421044941005D5A98 /* ios_objc_samplesUITests.m */; };
+		B6FC3444210C910900D3F5DA /* SPJAnimalCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B6FC3442210C910900D3F5DA /* SPJAnimalCollectionViewCell.m */; };
+		B6FC3445210C910900D3F5DA /* SPJAnimalCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6FC3443210C910900D3F5DA /* SPJAnimalCollectionViewCell.xib */; };
+		B6FC3449210C9D5B00D3F5DA /* SPJCollectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = B6FC3447210C9D5B00D3F5DA /* SPJCollectionHeaderView.m */; };
+		B6FC344A210C9D5B00D3F5DA /* SPJCollectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6FC3448210C9D5B00D3F5DA /* SPJCollectionHeaderView.xib */; };
+		B6FC344E210C9D9200D3F5DA /* SPJCollectionFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = B6FC344C210C9D9200D3F5DA /* SPJCollectionFooterView.m */; };
+		B6FC344F210C9D9200D3F5DA /* SPJCollectionFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6FC344D210C9D9200D3F5DA /* SPJCollectionFooterView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,16 @@
 		B659AC7021044941005D5A98 /* ios-objc-samplesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-objc-samplesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B659AC7421044941005D5A98 /* ios_objc_samplesUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ios_objc_samplesUITests.m; sourceTree = "<group>"; };
 		B659AC7621044941005D5A98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6FC3441210C910900D3F5DA /* SPJAnimalCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPJAnimalCollectionViewCell.h; sourceTree = "<group>"; };
+		B6FC3442210C910900D3F5DA /* SPJAnimalCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPJAnimalCollectionViewCell.m; sourceTree = "<group>"; };
+		B6FC3443210C910900D3F5DA /* SPJAnimalCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SPJAnimalCollectionViewCell.xib; sourceTree = "<group>"; };
+		B6FC3446210C9D5B00D3F5DA /* SPJCollectionHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPJCollectionHeaderView.h; sourceTree = "<group>"; };
+		B6FC3447210C9D5B00D3F5DA /* SPJCollectionHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPJCollectionHeaderView.m; sourceTree = "<group>"; };
+		B6FC3448210C9D5B00D3F5DA /* SPJCollectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SPJCollectionHeaderView.xib; sourceTree = "<group>"; };
+		B6FC344B210C9D9200D3F5DA /* SPJCollectionFooterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPJCollectionFooterView.h; sourceTree = "<group>"; };
+		B6FC344C210C9D9200D3F5DA /* SPJCollectionFooterView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPJCollectionFooterView.m; sourceTree = "<group>"; };
+		B6FC344D210C9D9200D3F5DA /* SPJCollectionFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SPJCollectionFooterView.xib; sourceTree = "<group>"; };
+		B6FC3451210CAAEF00D3F5DA /* CollectionViewRegisterNib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionViewRegisterNib.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,13 +106,6 @@
 			path = Others;
 			sourceTree = "<group>";
 		};
-		B61FBA9421045D5B0038AF3A /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
 		B61FBA9521045D610038AF3A /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -105,13 +114,6 @@
 				B659AC542104493D005D5A98 /* ViewController.m */,
 			);
 			path = ViewControllers;
-			sourceTree = "<group>";
-		};
-		B61FBA9621045D670038AF3A /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		B61FBA9721045DAE0038AF3A /* Storyboards */ = {
@@ -146,9 +148,9 @@
 		B659AC4F2104493D005D5A98 /* ios-objc-samples */ = {
 			isa = PBXGroup;
 			children = (
-				B61FBA9621045D670038AF3A /* Models */,
+				B6FC343F210C8E3F00D3F5DA /* Models */,
 				B61FBA9521045D610038AF3A /* ViewControllers */,
-				B61FBA9421045D5B0038AF3A /* Views */,
+				B6FC3440210C8E4900D3F5DA /* Views */,
 				B61FBA9321045D430038AF3A /* Others */,
 			);
 			path = "ios-objc-samples";
@@ -170,6 +172,38 @@
 				B659AC7621044941005D5A98 /* Info.plist */,
 			);
 			path = "ios-objc-samplesUITests";
+			sourceTree = "<group>";
+		};
+		B6FC343F210C8E3F00D3F5DA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B6FC3440210C8E4900D3F5DA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B6FC3450210CAAD400D3F5DA /* Protocol */,
+				B6FC3441210C910900D3F5DA /* SPJAnimalCollectionViewCell.h */,
+				B6FC3442210C910900D3F5DA /* SPJAnimalCollectionViewCell.m */,
+				B6FC3443210C910900D3F5DA /* SPJAnimalCollectionViewCell.xib */,
+				B6FC3446210C9D5B00D3F5DA /* SPJCollectionHeaderView.h */,
+				B6FC3447210C9D5B00D3F5DA /* SPJCollectionHeaderView.m */,
+				B6FC3448210C9D5B00D3F5DA /* SPJCollectionHeaderView.xib */,
+				B6FC344B210C9D9200D3F5DA /* SPJCollectionFooterView.h */,
+				B6FC344C210C9D9200D3F5DA /* SPJCollectionFooterView.m */,
+				B6FC344D210C9D9200D3F5DA /* SPJCollectionFooterView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B6FC3450210CAAD400D3F5DA /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				B6FC3451210CAAEF00D3F5DA /* CollectionViewRegisterNib.h */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,9 +309,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6FC344A210C9D5B00D3F5DA /* SPJCollectionHeaderView.xib in Resources */,
 				B659AC5D21044941005D5A98 /* LaunchScreen.storyboard in Resources */,
 				B659AC5A21044941005D5A98 /* Assets.xcassets in Resources */,
+				B6FC3445210C910900D3F5DA /* SPJAnimalCollectionViewCell.xib in Resources */,
 				B659AC582104493D005D5A98 /* Main.storyboard in Resources */,
+				B6FC344F210C9D9200D3F5DA /* SPJCollectionFooterView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,8 +339,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6FC3449210C9D5B00D3F5DA /* SPJCollectionHeaderView.m in Sources */,
+				B6FC344E210C9D9200D3F5DA /* SPJCollectionFooterView.m in Sources */,
 				B659AC552104493D005D5A98 /* ViewController.m in Sources */,
 				B659AC6021044941005D5A98 /* main.m in Sources */,
+				B6FC3444210C910900D3F5DA /* SPJAnimalCollectionViewCell.m in Sources */,
 				B659AC522104493D005D5A98 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
