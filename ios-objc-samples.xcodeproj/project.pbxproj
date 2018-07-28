@@ -15,6 +15,10 @@
 		B659AC6021044941005D5A98 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B659AC5F21044941005D5A98 /* main.m */; };
 		B659AC6A21044941005D5A98 /* ios_objc_samplesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B659AC6921044941005D5A98 /* ios_objc_samplesTests.m */; };
 		B659AC7521044941005D5A98 /* ios_objc_samplesUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B659AC7421044941005D5A98 /* ios_objc_samplesUITests.m */; };
+		B6FC3434210C1DE400D3F5DA /* SPJSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = B6FC3433210C1DE400D3F5DA /* SPJSectionHeaderView.m */; };
+		B6FC3436210C1DF300D3F5DA /* SPJSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6FC3435210C1DF300D3F5DA /* SPJSectionHeaderView.xib */; };
+		B6FC343B210C278500D3F5DA /* SPJTableViewSectionContents.m in Sources */ = {isa = PBXBuildFile; fileRef = B6FC343A210C278500D3F5DA /* SPJTableViewSectionContents.m */; };
+		B6FC343E210C28E300D3F5DA /* SPJTableViewContentsProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = B6FC343D210C28E300D3F5DA /* SPJTableViewContentsProvider.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,14 @@
 		B659AC7021044941005D5A98 /* ios-objc-samplesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-objc-samplesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B659AC7421044941005D5A98 /* ios_objc_samplesUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ios_objc_samplesUITests.m; sourceTree = "<group>"; };
 		B659AC7621044941005D5A98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6FC3432210C1DE400D3F5DA /* SPJSectionHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPJSectionHeaderView.h; sourceTree = "<group>"; };
+		B6FC3433210C1DE400D3F5DA /* SPJSectionHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPJSectionHeaderView.m; sourceTree = "<group>"; };
+		B6FC3435210C1DF300D3F5DA /* SPJSectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SPJSectionHeaderView.xib; sourceTree = "<group>"; };
+		B6FC3438210C207F00D3F5DA /* SPJNibInstantiateProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPJNibInstantiateProtocol.h; sourceTree = "<group>"; };
+		B6FC3439210C278500D3F5DA /* SPJTableViewSectionContents.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPJTableViewSectionContents.h; sourceTree = "<group>"; };
+		B6FC343A210C278500D3F5DA /* SPJTableViewSectionContents.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPJTableViewSectionContents.m; sourceTree = "<group>"; };
+		B6FC343C210C28E300D3F5DA /* SPJTableViewContentsProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPJTableViewContentsProvider.h; sourceTree = "<group>"; };
+		B6FC343D210C28E300D3F5DA /* SPJTableViewContentsProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPJTableViewContentsProvider.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +105,10 @@
 		B61FBA9421045D5B0038AF3A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B6FC3437210C206200D3F5DA /* Protocol */,
+				B6FC3432210C1DE400D3F5DA /* SPJSectionHeaderView.h */,
+				B6FC3433210C1DE400D3F5DA /* SPJSectionHeaderView.m */,
+				B6FC3435210C1DF300D3F5DA /* SPJSectionHeaderView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -110,6 +126,10 @@
 		B61FBA9621045D670038AF3A /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B6FC3439210C278500D3F5DA /* SPJTableViewSectionContents.h */,
+				B6FC343A210C278500D3F5DA /* SPJTableViewSectionContents.m */,
+				B6FC343C210C28E300D3F5DA /* SPJTableViewContentsProvider.h */,
+				B6FC343D210C28E300D3F5DA /* SPJTableViewContentsProvider.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -170,6 +190,14 @@
 				B659AC7621044941005D5A98 /* Info.plist */,
 			);
 			path = "ios-objc-samplesUITests";
+			sourceTree = "<group>";
+		};
+		B6FC3437210C206200D3F5DA /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				B6FC3438210C207F00D3F5DA /* SPJNibInstantiateProtocol.h */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,6 +306,7 @@
 				B659AC5D21044941005D5A98 /* LaunchScreen.storyboard in Resources */,
 				B659AC5A21044941005D5A98 /* Assets.xcassets in Resources */,
 				B659AC582104493D005D5A98 /* Main.storyboard in Resources */,
+				B6FC3436210C1DF300D3F5DA /* SPJSectionHeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,7 +333,10 @@
 			files = (
 				B659AC552104493D005D5A98 /* ViewController.m in Sources */,
 				B659AC6021044941005D5A98 /* main.m in Sources */,
+				B6FC343E210C28E300D3F5DA /* SPJTableViewContentsProvider.m in Sources */,
 				B659AC522104493D005D5A98 /* AppDelegate.m in Sources */,
+				B6FC3434210C1DE400D3F5DA /* SPJSectionHeaderView.m in Sources */,
+				B6FC343B210C278500D3F5DA /* SPJTableViewSectionContents.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
